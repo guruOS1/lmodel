@@ -8,4 +8,4 @@ X = df.loc[:,df.columns != 'output']
 y = df['output']
 lr = LinearRegression().fit(X,y)
 
-joblib.dump(lr, '/lrm/model/linear_regression_model.pkl')
+joblib.dump(lr, './model/linear_regression_model.pkl')
